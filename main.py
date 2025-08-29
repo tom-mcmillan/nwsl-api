@@ -68,18 +68,13 @@ Try it right here in the docs! Click any endpoint below, then click "Try it out"
 
 **Quick Start Examples:**
 
-<details>
-<summary><b>cURL</b></summary>
-
+**cURL:**
 ```bash
 curl -H "X-API-Key: nwsl-demo-key-2024" \\
      https://api.nwsldata.com/api/v1/teams/
 ```
-</details>
 
-<details>
-<summary><b>Python</b></summary>
-
+**Python:**
 ```python
 import requests
 
@@ -88,18 +83,14 @@ response = requests.get("https://api.nwsldata.com/api/v1/teams/", headers=header
 teams = response.json()
 print(f"Found {teams['total']} teams")
 ```
-</details>
 
-<details>
-<summary><b>JavaScript</b></summary>
-
+**JavaScript:**
 ```javascript
 const headers = {"X-API-Key": "nwsl-demo-key-2024"};
 fetch("https://api.nwsldata.com/api/v1/teams/", {headers})
   .then(res => res.json())
   .then(data => console.log(`Found ${data.total} teams`));
 ```
-</details>
 
 ### Step 3: Explore the Data
 Click on any section below to see available endpoints. Each endpoint has:
