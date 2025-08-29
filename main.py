@@ -19,20 +19,66 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title="NWSL API",
+    openapi_tags=[
+        {
+            "name": "Developer Access",
+            "description": "Get your API key and manage authentication",
+        },
+        {
+            "name": "Teams",
+            "description": "Access team information, rosters, and statistics",
+        },
+        {
+            "name": "Players", 
+            "description": "Player profiles, career stats, and match history",
+        },
+        {
+            "name": "Matches",
+            "description": "Match schedules, results, lineups, and detailed events",
+        },
+        {
+            "name": "Match Events",
+            "description": "Goals, cards, substitutions, and other match events",
+        },
+        {
+            "name": "Statistics",
+            "description": "Leaderboards, team stats, and player performance metrics",
+        },
+        {
+            "name": "Venues",
+            "description": "Stadium information, capacity, and location details",
+        }
+    ],
     description="""
-National Women's Soccer League API
+# National Women's Soccer League API
 
 Access comprehensive NWSL data including teams, players, matches, and detailed statistics.
 
-**Authentication**  
-All endpoints require an API key. For demo access, use:
-- Header: `X-API-Key`
+## 🚀 Getting Started
+
+### Step 1: Get Your API Key
+**[→ Register for Free API Key](https://api.nwsldata.com/register)**
+
+Or use the demo key for testing:
+- Header: `X-API-Key`  
 - Value: `nwsl-demo-key-2024`
 
-**Get Your API Key**  
-Register at: https://api.nwsldata.com/register
+### Step 2: Make Your First Request
+Try it right here in the docs! Click any endpoint below, then click "Try it out".
 
-**Available Data**
+Example with curl:
+```bash
+curl -H "X-API-Key: nwsl-demo-key-2024" \\
+     https://api.nwsldata.com/api/v1/teams/
+```
+
+### Step 3: Explore the Data
+Click on any section below to see available endpoints. Each endpoint has:
+- **Try it out** button for testing
+- **Schema** tab showing response structure  
+- **Example** responses
+
+## 📊 Available Data
 - **Teams**: 16 NWSL teams with complete profiles and statistics
 - **Players**: 500+ player profiles with positions, nationalities, and career stats  
 - **Matches**: 1,500+ matches with scores, lineups, and detailed events
