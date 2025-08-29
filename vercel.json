@@ -1,0 +1,24 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://nwsl-api-78453984015.us-central1.run.app/api/:path*"
+    },
+    {
+      "source": "/docs",
+      "destination": "https://nwsl-api-78453984015.us-central1.run.app/docs"
+    },
+    {
+      "source": "/redoc",
+      "destination": "https://nwsl-api-78453984015.us-central1.run.app/redoc"
+    },
+    {
+      "source": "/register",
+      "destination": "https://nwsl-api-78453984015.us-central1.run.app/register"
+    },
+    {
+      "source": "/openapi.json",
+      "destination": "https://nwsl-api-78453984015.us-central1.run.app/openapi.json"
+    }
+  ]
+}

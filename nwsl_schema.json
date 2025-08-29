@@ -1,0 +1,2737 @@
+{
+  "match_event": {
+    "row_count": 9390,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false
+      },
+      {
+        "name": "match_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "season_id",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "team_uuid",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "match_date",
+        "type": "date",
+        "nullable": true
+      },
+      {
+        "name": "minute",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "stoppage_time",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "score_home",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "score_away",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "type",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "detail",
+        "type": "text",
+        "nullable": true
+      },
+      {
+        "name": "goal_player_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "assist_player_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "pk_player_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "own_goal_player_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "card_player_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "substitution_in_player_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "substitution_out_player_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "original_team_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "updated_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "match_uuid",
+        "type": "uuid",
+        "nullable": true
+      }
+    ],
+    "foreign_keys": [],
+    "sample_data": [
+      {
+        "id": "de79cb73-bfa7-4648-9892-6b47927ed62f",
+        "match_id": "76a4eaa9",
+        "season_id": "2023",
+        "team_uuid": "8700f229-bf59-4d69-ac47-cca9a5cf0944",
+        "match_date": "2023-04-30",
+        "minute": "61",
+        "stoppage_time": "None",
+        "score_home": "2",
+        "score_away": "0",
+        "type": "goal",
+        "detail": "61\u2019 2:0 Debinha \u2014\u00a0Goal 2:0",
+        "goal_player_id": "85cea0cf",
+        "assist_player_id": "None",
+        "pk_player_id": "None",
+        "own_goal_player_id": "None",
+        "card_player_id": "None",
+        "substitution_in_player_id": "None",
+        "substitution_out_player_id": "None",
+        "original_team_id": "None",
+        "created_at": "2025-08-20 18:26:03.018005",
+        "updated_at": "2025-08-22 03:24:57.823486",
+        "match_uuid": "85c4f834-0dab-46ab-9e73-24ebc9925fce"
+      },
+      {
+        "id": "e95a6121-65eb-47d4-9251-c8413521f24f",
+        "match_id": "7ee309e3",
+        "season_id": "2019",
+        "team_uuid": "ef5dfc30-d153-4bc9-957d-92678b35785c",
+        "match_date": "2019-06-23",
+        "minute": "80",
+        "stoppage_time": "None",
+        "score_home": "0",
+        "score_away": "1",
+        "type": "goal",
+        "detail": "80\u2019 0:1 Jess Fishlock \u2014\u00a0Goal 0:1",
+        "goal_player_id": "11cfa9d6",
+        "assist_player_id": "None",
+        "pk_player_id": "None",
+        "own_goal_player_id": "None",
+        "card_player_id": "None",
+        "substitution_in_player_id": "None",
+        "substitution_out_player_id": "None",
+        "original_team_id": "None",
+        "created_at": "2025-08-20 18:55:40.905018",
+        "updated_at": "2025-08-22 03:24:57.823486",
+        "match_uuid": "152ebd55-c0d5-4637-9795-bfa14a4f5a5d"
+      }
+    ]
+  },
+  "match_event_location": {
+    "row_count": 54,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false
+      },
+      {
+        "name": "nwsl_match_id",
+        "type": "text",
+        "nullable": false
+      },
+      {
+        "name": "nwsl_event_id",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "type_id",
+        "type": "smallint",
+        "nullable": false
+      },
+      {
+        "name": "outcome",
+        "type": "text",
+        "nullable": false
+      },
+      {
+        "name": "on_target",
+        "type": "boolean",
+        "nullable": false
+      },
+      {
+        "name": "is_goal",
+        "type": "boolean",
+        "nullable": false
+      },
+      {
+        "name": "period_id",
+        "type": "smallint",
+        "nullable": false
+      },
+      {
+        "name": "time_min",
+        "type": "smallint",
+        "nullable": false
+      },
+      {
+        "name": "time_sec",
+        "type": "smallint",
+        "nullable": false
+      },
+      {
+        "name": "team_id",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "team_name",
+        "type": "text",
+        "nullable": true
+      },
+      {
+        "name": "nwsl_player_id",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "nwsl_player_name",
+        "type": "text",
+        "nullable": true
+      },
+      {
+        "name": "x_pct",
+        "type": "numeric",
+        "nullable": false
+      },
+      {
+        "name": "y_pct",
+        "type": "numeric",
+        "nullable": false
+      },
+      {
+        "name": "x_yd",
+        "type": "numeric",
+        "nullable": false
+      },
+      {
+        "name": "y_yd",
+        "type": "numeric",
+        "nullable": false
+      },
+      {
+        "name": "shot_distance_yd",
+        "type": "numeric",
+        "nullable": false
+      },
+      {
+        "name": "shot_angle_deg",
+        "type": "numeric",
+        "nullable": false
+      },
+      {
+        "name": "inserted_at",
+        "type": "timestamp with time zone",
+        "nullable": false
+      },
+      {
+        "name": "fbref_match_id",
+        "type": "text",
+        "nullable": true
+      }
+    ],
+    "foreign_keys": [],
+    "sample_data": [
+      {
+        "id": "a224decf-8c04-463f-a620-c4184e97c7f3",
+        "nwsl_match_id": "435428140c8240d78bc3363fd742757c",
+        "nwsl_event_id": "2660250359",
+        "type_id": "13",
+        "outcome": "Miss",
+        "on_target": "False",
+        "is_goal": "False",
+        "period_id": "1",
+        "time_min": "1",
+        "time_sec": "53",
+        "team_id": "None",
+        "team_name": "None",
+        "nwsl_player_id": "None",
+        "nwsl_player_name": "M. Weaver",
+        "x_pct": "87.70",
+        "y_pct": "46.80",
+        "x_yd": "105.24",
+        "y_yd": "35.10",
+        "shot_distance_yd": "14.95",
+        "shot_angle_deg": "29.63",
+        "inserted_at": "2025-08-26 21:14:47.577473+00:00",
+        "fbref_match_id": "9ad58931"
+      },
+      {
+        "id": "b04853e7-8b76-4390-bc8c-0817cf1a8250",
+        "nwsl_match_id": "435428140c8240d78bc3363fd742757c",
+        "nwsl_event_id": "2660252061",
+        "type_id": "13",
+        "outcome": "Miss",
+        "on_target": "False",
+        "is_goal": "False",
+        "period_id": "1",
+        "time_min": "3",
+        "time_sec": "40",
+        "team_id": "None",
+        "team_name": "None",
+        "nwsl_player_id": "None",
+        "nwsl_player_name": "H. Mace",
+        "x_pct": "90.60",
+        "y_pct": "75.00",
+        "x_yd": "108.72",
+        "y_yd": "56.25",
+        "shot_distance_yd": "21.88",
+        "shot_angle_deg": "11.03",
+        "inserted_at": "2025-08-26 21:14:47.577473+00:00",
+        "fbref_match_id": "9ad58931"
+      }
+    ]
+  },
+  "match_goalkeeper": {
+    "row_count": 2635,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false
+      },
+      {
+        "name": "match_lineup_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "team_season_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "match_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "match_date",
+        "type": "date",
+        "nullable": true
+      },
+      {
+        "name": "player_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "season_id",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "minutes_played",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "shots_against",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "goals_against",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "saves",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "save_pct",
+        "type": "numeric",
+        "nullable": true
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "updated_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "teams_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "season_id_extracted",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "match_uuid",
+        "type": "uuid",
+        "nullable": true
+      }
+    ],
+    "foreign_keys": [
+      {
+        "column": "player_id",
+        "references_table": "player",
+        "references_column": "id"
+      },
+      {
+        "column": "team_season_id",
+        "references_table": "team",
+        "references_column": "id"
+      },
+      {
+        "column": "match_uuid",
+        "references_table": "match_registry",
+        "references_column": "id"
+      }
+    ],
+    "sample_data": [
+      {
+        "id": "f5d9a5de-42b5-4851-bd0e-ec23a5ca5d3c",
+        "match_lineup_id": "39ecc4f9-4f35-4801-a54c-9e6a8b9bb842",
+        "team_season_id": "ef5dfc30-d153-4bc9-957d-92678b35785c",
+        "match_id": "a0c570ff",
+        "match_date": "2019-08-02",
+        "player_id": "493c384e",
+        "season_id": "2019",
+        "minutes_played": "90",
+        "shots_against": "4",
+        "goals_against": "0",
+        "saves": "4",
+        "save_pct": "100.00",
+        "created_at": "2025-08-18 22:34:46.418939",
+        "updated_at": "2025-08-18 22:34:46.418939",
+        "teams_id": "None",
+        "season_id_extracted": "2019",
+        "match_uuid": "e822bd96-57a6-4210-b0cc-d401007ea004"
+      },
+      {
+        "id": "86f0963c-9149-49d3-8028-086ec2882806",
+        "match_lineup_id": "f00d0b53-cede-4bdf-a3d4-752f9e6890cf",
+        "team_season_id": "1626f693-5827-42f9-8bb9-87a199c0cdc9",
+        "match_id": "4f5b874c",
+        "match_date": "2019-07-19",
+        "player_id": "2d2234cf",
+        "season_id": "2019",
+        "minutes_played": "90",
+        "shots_against": "7",
+        "goals_against": "2",
+        "saves": "5",
+        "save_pct": "71.40",
+        "created_at": "2025-08-18 22:34:47.798511",
+        "updated_at": "2025-08-18 22:34:47.798511",
+        "teams_id": "None",
+        "season_id_extracted": "2019",
+        "match_uuid": "4b12fe53-560d-4526-9827-bbbaecd06260"
+      }
+    ]
+  },
+  "match_lineup": {
+    "row_count": 56047,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false
+      },
+      {
+        "name": "match_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "match_date",
+        "type": "date",
+        "nullable": true
+      },
+      {
+        "name": "season_id",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "player_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "team_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "position",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "shirt_number",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "minutes_played",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "started",
+        "type": "boolean",
+        "nullable": true
+      },
+      {
+        "name": "subbed_on",
+        "type": "boolean",
+        "nullable": true
+      },
+      {
+        "name": "subbed_off",
+        "type": "boolean",
+        "nullable": true
+      },
+      {
+        "name": "unused_sub",
+        "type": "boolean",
+        "nullable": true
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "updated_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "match_uuid",
+        "type": "uuid",
+        "nullable": true
+      }
+    ],
+    "foreign_keys": [],
+    "sample_data": [
+      {
+        "id": "c35167eb-dd7f-4973-8c04-19f708f03a5e",
+        "match_id": "e7f9838d",
+        "match_date": "2025-08-08",
+        "season_id": "2025",
+        "player_id": "e91c05ee",
+        "team_id": "ff2fd15d-7a93-4bc7-b19d-e4404a59e430",
+        "position": "None",
+        "shirt_number": "None",
+        "minutes_played": "None",
+        "started": "False",
+        "subbed_on": "True",
+        "subbed_off": "False",
+        "unused_sub": "False",
+        "created_at": "2025-08-17 03:25:53.584958",
+        "updated_at": "2025-08-17 03:25:53.584958",
+        "match_uuid": "1d735bd0-0f51-4334-9e10-4ee8ecc5484a"
+      },
+      {
+        "id": "25c96815-8c2c-400b-ad2c-5fccd0569aa5",
+        "match_id": "5ba185be",
+        "match_date": "2025-08-10",
+        "season_id": "2025",
+        "player_id": "73eb19a8",
+        "team_id": "02dedf62-816c-49d4-8b32-262d0c44ce68",
+        "position": "None",
+        "shirt_number": "1",
+        "minutes_played": "0",
+        "started": "False",
+        "subbed_on": "False",
+        "subbed_off": "False",
+        "unused_sub": "True",
+        "created_at": "2025-08-16 02:55:09.875802",
+        "updated_at": "2025-08-22 03:05:38.623316",
+        "match_uuid": "39736b78-f3ef-44ec-a6f1-0f571fe4a193"
+      }
+    ]
+  },
+  "match_player_defensive": {
+    "row_count": 28239,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false
+      },
+      {
+        "name": "match_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "season_id",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "team_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "match_lineup_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "team_season_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "tackles",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "tackles_won",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "tackles_def_third",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "tackles_mid_third",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "tackles_att_third",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "dribblers_tackled",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "dribbles_challenged",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "dribbled_pct",
+        "type": "numeric",
+        "nullable": true
+      },
+      {
+        "name": "challenges_lost",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "blocks",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "shots_blocked",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_blocked",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "interceptions",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "clearances",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "errors",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "tackles_plus_interceptions",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "updated_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "match_uuid",
+        "type": "uuid",
+        "nullable": true
+      }
+    ],
+    "foreign_keys": [
+      {
+        "column": "match_lineup_id",
+        "references_table": "match_lineup",
+        "references_column": "id"
+      }
+    ],
+    "sample_data": [
+      {
+        "id": "3ca569a3-2b11-4a5b-a578-35c086670b61",
+        "match_id": "2f0f155c",
+        "season_id": "2025",
+        "team_id": "7a4b3f8a-2727-4500-9efe-1a14e6ceed05",
+        "match_lineup_id": "0a3b3c4f-7930-4191-a49e-30afe55ad37e",
+        "team_season_id": "7a4b3f8a-2727-4500-9efe-1a14e6ceed05",
+        "tackles": "1",
+        "tackles_won": "0",
+        "tackles_def_third": "1",
+        "tackles_mid_third": "0",
+        "tackles_att_third": "0",
+        "dribblers_tackled": "1",
+        "dribbles_challenged": "2",
+        "dribbled_pct": "50.00",
+        "challenges_lost": "1",
+        "blocks": "3",
+        "shots_blocked": "1",
+        "passes_blocked": "2",
+        "interceptions": "0",
+        "clearances": "0",
+        "errors": "0",
+        "tackles_plus_interceptions": "1",
+        "created_at": "2025-08-19 02:37:20.910015",
+        "updated_at": "2025-08-22 03:19:23.188861",
+        "match_uuid": "63596a9e-bb41-4d87-b082-80288b3ea8ac"
+      },
+      {
+        "id": "320200dd-a94f-4e8f-ad26-c9928e84ea7e",
+        "match_id": "2f0f155c",
+        "season_id": "2025",
+        "team_id": "7a4b3f8a-2727-4500-9efe-1a14e6ceed05",
+        "match_lineup_id": "1cb271f6-3f0a-4bd1-9a5b-bb1c829994a4",
+        "team_season_id": "7a4b3f8a-2727-4500-9efe-1a14e6ceed05",
+        "tackles": "0",
+        "tackles_won": "0",
+        "tackles_def_third": "0",
+        "tackles_mid_third": "0",
+        "tackles_att_third": "0",
+        "dribblers_tackled": "0",
+        "dribbles_challenged": "1",
+        "dribbled_pct": "0.00",
+        "challenges_lost": "1",
+        "blocks": "1",
+        "shots_blocked": "0",
+        "passes_blocked": "1",
+        "interceptions": "1",
+        "clearances": "0",
+        "errors": "0",
+        "tackles_plus_interceptions": "1",
+        "created_at": "2025-08-19 02:37:20.910015",
+        "updated_at": "2025-08-22 03:19:23.188861",
+        "match_uuid": "63596a9e-bb41-4d87-b082-80288b3ea8ac"
+      }
+    ]
+  },
+  "match_player_misc": {
+    "row_count": 28239,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false
+      },
+      {
+        "name": "match_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "season_id",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "team_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "match_lineup_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "team_season_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "yellow_cards",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "red_cards",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "second_yellow_cards",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "fouls_committed",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "fouls_drawn",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "interceptions",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "offsides",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "crosses",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "tackles_won",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "ball_recoveries",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "penalties_won",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "penalties_conceded",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "own_goals",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "aerials_won",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "aerials_lost",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "aerials_won_pct",
+        "type": "numeric",
+        "nullable": true
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "updated_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "match_uuid",
+        "type": "uuid",
+        "nullable": true
+      }
+    ],
+    "foreign_keys": [
+      {
+        "column": "match_lineup_id",
+        "references_table": "match_lineup",
+        "references_column": "id"
+      }
+    ],
+    "sample_data": [
+      {
+        "id": "c9288889-bdb3-42ca-a046-db1b2f588814",
+        "match_id": "008e301f",
+        "season_id": "2025",
+        "team_id": "ef5dfc30-d153-4bc9-957d-92678b35785c",
+        "match_lineup_id": "78847eff-8a5d-424b-8a38-e09634abfdaa",
+        "team_season_id": "ef5dfc30-d153-4bc9-957d-92678b35785c",
+        "yellow_cards": "0",
+        "red_cards": "0",
+        "second_yellow_cards": "0",
+        "fouls_committed": "0",
+        "fouls_drawn": "0",
+        "interceptions": "0",
+        "offsides": "0",
+        "crosses": "0",
+        "tackles_won": "0",
+        "ball_recoveries": "1",
+        "penalties_won": "0",
+        "penalties_conceded": "0",
+        "own_goals": "0",
+        "aerials_won": "0",
+        "aerials_lost": "0",
+        "aerials_won_pct": "None",
+        "created_at": "2025-08-18 18:47:11.173124",
+        "updated_at": "2025-08-22 03:17:31.044040",
+        "match_uuid": "5f6929e4-5b63-4134-afa3-665567b7a44e"
+      },
+      {
+        "id": "b0d46080-0508-4dcc-8456-4ca4cf6292e6",
+        "match_id": "008e301f",
+        "season_id": "2025",
+        "team_id": "ef5dfc30-d153-4bc9-957d-92678b35785c",
+        "match_lineup_id": "d0e93ef4-e736-4821-8db6-dd13a38ab0fb",
+        "team_season_id": "ef5dfc30-d153-4bc9-957d-92678b35785c",
+        "yellow_cards": "0",
+        "red_cards": "0",
+        "second_yellow_cards": "0",
+        "fouls_committed": "0",
+        "fouls_drawn": "1",
+        "interceptions": "1",
+        "offsides": "0",
+        "crosses": "0",
+        "tackles_won": "0",
+        "ball_recoveries": "1",
+        "penalties_won": "0",
+        "penalties_conceded": "0",
+        "own_goals": "0",
+        "aerials_won": "0",
+        "aerials_lost": "0",
+        "aerials_won_pct": "None",
+        "created_at": "2025-08-18 18:47:11.173124",
+        "updated_at": "2025-08-22 03:17:31.044040",
+        "match_uuid": "5f6929e4-5b63-4134-afa3-665567b7a44e"
+      }
+    ]
+  },
+  "match_player_pass_types": {
+    "row_count": 28240,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false
+      },
+      {
+        "name": "match_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "season_id",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "team_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "match_lineup_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "team_season_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "passes_attempted",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_completed",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_live",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_dead",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_free_kicks",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "through_balls",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_switches",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "crosses",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "throw_ins",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "corner_kicks",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "corner_kicks_in",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "corner_kicks_out",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "corner_kicks_straight",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_offside",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_blocked",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "season_id_extracted",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "updated_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "match_uuid",
+        "type": "uuid",
+        "nullable": true
+      }
+    ],
+    "foreign_keys": [
+      {
+        "column": "match_lineup_id",
+        "references_table": "match_lineup",
+        "references_column": "id"
+      }
+    ],
+    "sample_data": [
+      {
+        "id": "4f5fa106-e015-4fb1-9538-950b9a848fa0",
+        "match_id": "509b89aa",
+        "season_id": "2021",
+        "team_id": "7a4b3f8a-2727-4500-9efe-1a14e6ceed05",
+        "match_lineup_id": "660fe88b-4641-4973-b725-21ee8864bcdf",
+        "team_season_id": "7a4b3f8a-2727-4500-9efe-1a14e6ceed05",
+        "passes_attempted": "37",
+        "passes_completed": "23",
+        "passes_live": "25",
+        "passes_dead": "12",
+        "passes_free_kicks": "0",
+        "through_balls": "0",
+        "passes_switches": "0",
+        "crosses": "2",
+        "throw_ins": "12",
+        "corner_kicks": "0",
+        "corner_kicks_in": "0",
+        "corner_kicks_out": "0",
+        "corner_kicks_straight": "0",
+        "passes_offside": "0",
+        "passes_blocked": "1",
+        "season_id_extracted": "2021",
+        "created_at": "2025-08-19 02:07:16.079557",
+        "updated_at": "2025-08-22 03:15:28.208243",
+        "match_uuid": "220ca7ee-2ad9-40f5-aa53-5bca61fcb6c2"
+      },
+      {
+        "id": "0a2f4e95-45cd-4b1b-830a-d505fb46ba30",
+        "match_id": "509b89aa",
+        "season_id": "2021",
+        "team_id": "7a4b3f8a-2727-4500-9efe-1a14e6ceed05",
+        "match_lineup_id": "c8e479e8-1a63-4404-a49a-ddf8afe1279e",
+        "team_season_id": "7a4b3f8a-2727-4500-9efe-1a14e6ceed05",
+        "passes_attempted": "28",
+        "passes_completed": "21",
+        "passes_live": "18",
+        "passes_dead": "10",
+        "passes_free_kicks": "2",
+        "through_balls": "0",
+        "passes_switches": "0",
+        "crosses": "0",
+        "throw_ins": "0",
+        "corner_kicks": "0",
+        "corner_kicks_in": "0",
+        "corner_kicks_out": "0",
+        "corner_kicks_straight": "0",
+        "passes_offside": "0",
+        "passes_blocked": "0",
+        "season_id_extracted": "2021",
+        "created_at": "2025-08-19 02:07:16.079557",
+        "updated_at": "2025-08-22 03:15:28.208243",
+        "match_uuid": "220ca7ee-2ad9-40f5-aa53-5bca61fcb6c2"
+      }
+    ]
+  },
+  "match_player_passing": {
+    "row_count": 29759,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false
+      },
+      {
+        "name": "match_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "season_id",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "team_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "match_lineup_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "team_season_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "passes_cmp",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_att",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_cmp_pct",
+        "type": "numeric",
+        "nullable": true
+      },
+      {
+        "name": "passes_total_dist_yds",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_prog_dist_yds",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_short_cmp",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_short_att",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_short_pct",
+        "type": "numeric",
+        "nullable": true
+      },
+      {
+        "name": "passes_medium_cmp",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_medium_att",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_medium_pct",
+        "type": "numeric",
+        "nullable": true
+      },
+      {
+        "name": "passes_long_cmp",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_long_att",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_long_pct",
+        "type": "numeric",
+        "nullable": true
+      },
+      {
+        "name": "assists",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "xag",
+        "type": "numeric",
+        "nullable": true
+      },
+      {
+        "name": "xa",
+        "type": "numeric",
+        "nullable": true
+      },
+      {
+        "name": "key_passes",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_final_third",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_penalty_area",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_crosses_penalty_area",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "prog_passes",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "season_id_extracted",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "updated_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "match_uuid",
+        "type": "uuid",
+        "nullable": true
+      }
+    ],
+    "foreign_keys": [
+      {
+        "column": "match_lineup_id",
+        "references_table": "match_lineup",
+        "references_column": "id"
+      }
+    ],
+    "sample_data": [
+      {
+        "id": "27f8d14c-6cb8-4bdc-96f7-bc6a1fa96491",
+        "match_id": "008e301f",
+        "season_id": "2025",
+        "team_id": "ff2fd15d-7a93-4bc7-b19d-e4404a59e430",
+        "match_lineup_id": "ae5f7964-e7ed-40ae-9959-9d221cf096b4",
+        "team_season_id": "ff2fd15d-7a93-4bc7-b19d-e4404a59e430",
+        "passes_cmp": "5",
+        "passes_att": "7",
+        "passes_cmp_pct": "71.40",
+        "passes_total_dist_yds": "64",
+        "passes_prog_dist_yds": "12",
+        "passes_short_cmp": "4",
+        "passes_short_att": "5",
+        "passes_short_pct": "80.00",
+        "passes_medium_cmp": "1",
+        "passes_medium_att": "2",
+        "passes_medium_pct": "50.00",
+        "passes_long_cmp": "0",
+        "passes_long_att": "0",
+        "passes_long_pct": "None",
+        "assists": "0",
+        "xag": "0.000",
+        "xa": "0.000",
+        "key_passes": "0",
+        "passes_final_third": "0",
+        "passes_penalty_area": "0",
+        "passes_crosses_penalty_area": "0",
+        "prog_passes": "0",
+        "season_id_extracted": "2025",
+        "created_at": "2025-08-18 22:03:28.110169",
+        "updated_at": "2025-08-22 03:12:30.951988",
+        "match_uuid": "5f6929e4-5b63-4134-afa3-665567b7a44e"
+      },
+      {
+        "id": "e43b3c06-627e-43bf-ba90-f9ecdb90218b",
+        "match_id": "008e301f",
+        "season_id": "2025",
+        "team_id": "ef5dfc30-d153-4bc9-957d-92678b35785c",
+        "match_lineup_id": "1cd4bd35-c0fb-4a0e-8cf1-9be93fc6cd32",
+        "team_season_id": "ef5dfc30-d153-4bc9-957d-92678b35785c",
+        "passes_cmp": "11",
+        "passes_att": "19",
+        "passes_cmp_pct": "57.90",
+        "passes_total_dist_yds": "162",
+        "passes_prog_dist_yds": "27",
+        "passes_short_cmp": "7",
+        "passes_short_att": "12",
+        "passes_short_pct": "58.30",
+        "passes_medium_cmp": "3",
+        "passes_medium_att": "6",
+        "passes_medium_pct": "50.00",
+        "passes_long_cmp": "1",
+        "passes_long_att": "1",
+        "passes_long_pct": "100.00",
+        "assists": "0",
+        "xag": "0.000",
+        "xa": "0.100",
+        "key_passes": "2",
+        "passes_final_third": "1",
+        "passes_penalty_area": "0",
+        "passes_crosses_penalty_area": "0",
+        "prog_passes": "2",
+        "season_id_extracted": "2025",
+        "created_at": "2025-08-18 22:03:28.110169",
+        "updated_at": "2025-08-22 03:12:30.951988",
+        "match_uuid": "5f6929e4-5b63-4134-afa3-665567b7a44e"
+      }
+    ]
+  },
+  "match_player_possession": {
+    "row_count": 28239,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false
+      },
+      {
+        "name": "match_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "season_id",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "team_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "match_lineup_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "team_season_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "touches",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "touches_def_box",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "touches_def_third",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "touches_mid_third",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "touches_att_third",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "touches_att_box",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "touches_live",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "take_ons_attempted",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "take_ons_succeeded",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "take_ons_success_pct",
+        "type": "numeric",
+        "nullable": true
+      },
+      {
+        "name": "tackled_during_take_on",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "tackled_during_take_on_pct",
+        "type": "numeric",
+        "nullable": true
+      },
+      {
+        "name": "carries",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "total_carry_distance_yds",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "progressive_carry_distance_yds",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "progressive_carries",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "carries_into_final_third",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "carries_into_box",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "miscontrols",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "dispossessed",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "passes_received",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "progressive_passes_received",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "season_id_extracted",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "updated_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "match_uuid",
+        "type": "uuid",
+        "nullable": true
+      }
+    ],
+    "foreign_keys": [
+      {
+        "column": "match_lineup_id",
+        "references_table": "match_lineup",
+        "references_column": "id"
+      }
+    ],
+    "sample_data": [
+      {
+        "id": "aafaba1a-9e1f-4234-b388-9306d681c3d3",
+        "match_id": "008e301f",
+        "season_id": "2025",
+        "team_id": "ff2fd15d-7a93-4bc7-b19d-e4404a59e430",
+        "match_lineup_id": "77f389d1-36a9-4ea5-82b9-54b1ee1d28b0",
+        "team_season_id": "ff2fd15d-7a93-4bc7-b19d-e4404a59e430",
+        "touches": "50",
+        "touches_def_box": "2",
+        "touches_def_third": "6",
+        "touches_mid_third": "20",
+        "touches_att_third": "24",
+        "touches_att_box": "3",
+        "touches_live": "50",
+        "take_ons_attempted": "0",
+        "take_ons_succeeded": "0",
+        "take_ons_success_pct": "0.00",
+        "tackled_during_take_on": "0",
+        "tackled_during_take_on_pct": "0.00",
+        "carries": "31",
+        "total_carry_distance_yds": "119",
+        "progressive_carry_distance_yds": "32",
+        "progressive_carries": "1",
+        "carries_into_final_third": "0",
+        "carries_into_box": "1",
+        "miscontrols": "2",
+        "dispossessed": "3",
+        "passes_received": "36",
+        "progressive_passes_received": "10",
+        "season_id_extracted": "2025",
+        "created_at": "2025-08-19 03:10:57.771346",
+        "updated_at": "2025-08-22 03:10:15.814162",
+        "match_uuid": "5f6929e4-5b63-4134-afa3-665567b7a44e"
+      },
+      {
+        "id": "668b8f7d-53b4-4c9e-bb00-06ce60c06099",
+        "match_id": "008e301f",
+        "season_id": "2025",
+        "team_id": "ff2fd15d-7a93-4bc7-b19d-e4404a59e430",
+        "match_lineup_id": "5da94a56-dee4-45d8-819e-43e5fa651090",
+        "team_season_id": "ff2fd15d-7a93-4bc7-b19d-e4404a59e430",
+        "touches": "32",
+        "touches_def_box": "0",
+        "touches_def_third": "7",
+        "touches_mid_third": "19",
+        "touches_att_third": "7",
+        "touches_att_box": "2",
+        "touches_live": "32",
+        "take_ons_attempted": "2",
+        "take_ons_succeeded": "0",
+        "take_ons_success_pct": "0.00",
+        "tackled_during_take_on": "2",
+        "tackled_during_take_on_pct": "100.00",
+        "carries": "15",
+        "total_carry_distance_yds": "92",
+        "progressive_carry_distance_yds": "48",
+        "progressive_carries": "2",
+        "carries_into_final_third": "1",
+        "carries_into_box": "0",
+        "miscontrols": "2",
+        "dispossessed": "1",
+        "passes_received": "18",
+        "progressive_passes_received": "6",
+        "season_id_extracted": "2025",
+        "created_at": "2025-08-19 03:10:57.771346",
+        "updated_at": "2025-08-22 03:10:15.814162",
+        "match_uuid": "5f6929e4-5b63-4134-afa3-665567b7a44e"
+      }
+    ]
+  },
+  "match_registry": {
+    "row_count": 1591,
+    "columns": [
+      {
+        "name": "fbref_match_id",
+        "type": "character varying",
+        "nullable": false
+      },
+      {
+        "name": "match_date",
+        "type": "date",
+        "nullable": false
+      },
+      {
+        "name": "season_id",
+        "type": "integer",
+        "nullable": false
+      },
+      {
+        "name": "home_goals",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "away_goals",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "venue_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "attendance",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "type",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "round",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "updated_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "time",
+        "type": "time without time zone",
+        "nullable": true
+      },
+      {
+        "name": "nwsl_match_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "home_teams_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "away_teams_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "asa_match_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false
+      }
+    ],
+    "foreign_keys": [
+      {
+        "column": "venue_id",
+        "references_table": "venue",
+        "references_column": "id"
+      }
+    ],
+    "sample_data": [
+      {
+        "fbref_match_id": "00d409f0",
+        "match_date": "2022-07-29",
+        "season_id": "2022",
+        "home_goals": "3",
+        "away_goals": "3",
+        "venue_id": "8df55d4b-16a6-4484-b642-2b8fe31381b7",
+        "attendance": "5211",
+        "type": "Regular Season",
+        "round": "None",
+        "created_at": "2025-08-15 19:42:40.980147",
+        "updated_at": "2025-08-22 03:41:52.325844",
+        "time": "19:30:00",
+        "nwsl_match_id": "None",
+        "home_teams_id": "02dedf62-816c-49d4-8b32-262d0c44ce68",
+        "away_teams_id": "482606dc-7dfa-4b24-adcb-132b05abbb57",
+        "asa_match_id": "None",
+        "id": "7fe73cb9-ed97-4da7-92b5-9471fc546c1a"
+      },
+      {
+        "fbref_match_id": "0262bb35",
+        "match_date": "2019-07-06",
+        "season_id": "2019",
+        "home_goals": "4",
+        "away_goals": "3",
+        "venue_id": "bb6dd8c3-07fe-4f29-a87a-3af6d9545a16",
+        "attendance": "3703",
+        "type": "Regular Season",
+        "round": "None",
+        "created_at": "2025-08-15 19:43:11.283235",
+        "updated_at": "2025-08-22 03:41:52.325844",
+        "time": "19:30:00",
+        "nwsl_match_id": "None",
+        "home_teams_id": "482606dc-7dfa-4b24-adcb-132b05abbb57",
+        "away_teams_id": "f0b1b825-7b4b-4317-80f3-188f2eb45062",
+        "asa_match_id": "None",
+        "id": "379aad26-5760-4688-83c8-fd2a22c5b074"
+      }
+    ]
+  },
+  "match_shot": {
+    "row_count": 24267,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false
+      },
+      {
+        "name": "match_id",
+        "type": "character varying",
+        "nullable": false
+      },
+      {
+        "name": "season_id",
+        "type": "integer",
+        "nullable": false
+      },
+      {
+        "name": "player_id",
+        "type": "character varying",
+        "nullable": false
+      },
+      {
+        "name": "team_id",
+        "type": "character varying",
+        "nullable": false
+      },
+      {
+        "name": "minute",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "stoppage_time",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "xg",
+        "type": "numeric",
+        "nullable": true
+      },
+      {
+        "name": "psxg",
+        "type": "numeric",
+        "nullable": true
+      },
+      {
+        "name": "outcome",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "distance",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "body_part",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "notes",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "sca1_player_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "sca1_event",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "sca2_player_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "sca2_event",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "updated_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "match_lineup_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "team_uuid",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "match_uuid",
+        "type": "uuid",
+        "nullable": true
+      }
+    ],
+    "foreign_keys": [
+      {
+        "column": "player_id",
+        "references_table": "player",
+        "references_column": "id"
+      },
+      {
+        "column": "sca1_player_id",
+        "references_table": "player",
+        "references_column": "id"
+      },
+      {
+        "column": "sca2_player_id",
+        "references_table": "player",
+        "references_column": "id"
+      },
+      {
+        "column": "match_lineup_id",
+        "references_table": "match_lineup",
+        "references_column": "id"
+      },
+      {
+        "column": "match_uuid",
+        "references_table": "match_registry",
+        "references_column": "id"
+      }
+    ],
+    "sample_data": [
+      {
+        "id": "51635b45-dfd8-4aa7-9612-86ecaa5c5571",
+        "match_id": "86b6cc0a",
+        "season_id": "2019",
+        "player_id": "7858f8fd",
+        "team_id": "e442aad0",
+        "minute": "15",
+        "stoppage_time": "None",
+        "xg": "0.400",
+        "psxg": "0.750",
+        "outcome": "Saved",
+        "distance": "5",
+        "body_part": "Left Foot",
+        "notes": "None",
+        "sca1_player_id": "7e19bccd",
+        "sca1_event": "Pass (Live)",
+        "sca2_player_id": "7e19bccd",
+        "sca2_event": "Take-On",
+        "created_at": "2025-08-18 14:22:01.539597",
+        "updated_at": "2025-08-22 03:21:57.096080",
+        "match_lineup_id": "c5e44940-ca8b-4052-bef5-e7618a333f3d",
+        "team_uuid": "482606dc-7dfa-4b24-adcb-132b05abbb57",
+        "match_uuid": "4e4e8004-de9b-40c7-97ef-719d6177701e"
+      },
+      {
+        "id": "79f41a49-7953-42a7-8c5c-bf6f5a68af53",
+        "match_id": "3266a287",
+        "season_id": "2020",
+        "player_id": "05e20bac",
+        "team_id": "8e306dc6",
+        "minute": "34",
+        "stoppage_time": "None",
+        "xg": "0.020",
+        "psxg": "0.020",
+        "outcome": "Goal",
+        "distance": "41",
+        "body_part": "Right Foot",
+        "notes": "None",
+        "sca1_player_id": "None",
+        "sca1_event": "None",
+        "sca2_player_id": "None",
+        "sca2_event": "None",
+        "created_at": "2025-08-18 14:11:19.074966",
+        "updated_at": "2025-08-22 03:21:57.096080",
+        "match_lineup_id": "6342f7db-6b2b-4f44-9378-3c1bc214a44a",
+        "team_uuid": "ff2fd15d-7a93-4bc7-b19d-e4404a59e430",
+        "match_uuid": "da956a7a-9b2b-4a7e-83b2-b8f2b6dced13"
+      }
+    ]
+  },
+  "match_team_summary": {
+    "row_count": 4554,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false
+      },
+      {
+        "name": "match_id",
+        "type": "character varying",
+        "nullable": false
+      },
+      {
+        "name": "team_id",
+        "type": "uuid",
+        "nullable": false
+      },
+      {
+        "name": "season_id",
+        "type": "integer",
+        "nullable": false
+      },
+      {
+        "name": "match_date",
+        "type": "date",
+        "nullable": false
+      },
+      {
+        "name": "is_home",
+        "type": "boolean",
+        "nullable": false
+      },
+      {
+        "name": "opponent_team_id",
+        "type": "uuid",
+        "nullable": false
+      },
+      {
+        "name": "venue_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "goals_for",
+        "type": "integer",
+        "nullable": false
+      },
+      {
+        "name": "goals_against",
+        "type": "integer",
+        "nullable": false
+      },
+      {
+        "name": "outcome",
+        "type": "character varying",
+        "nullable": false
+      },
+      {
+        "name": "points",
+        "type": "integer",
+        "nullable": false
+      },
+      {
+        "name": "total_passes_attempted",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "total_passes_completed",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "pass_completion_pct",
+        "type": "numeric",
+        "nullable": true
+      },
+      {
+        "name": "total_assists",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "total_key_passes",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "progressive_passes",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "total_touches",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "total_carries",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "progressive_carries",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "total_take_ons_attempted",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "total_take_ons_succeeded",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "total_tackles",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "total_tackles_won",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "total_interceptions",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "total_clearances",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "total_blocks",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "yellow_cards",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "red_cards",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "total_fouls_committed",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "total_fouls_drawn",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "total_shots",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "shots_on_target",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "total_xg",
+        "type": "numeric",
+        "nullable": true
+      },
+      {
+        "name": "players_used",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "starters",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "updated_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "match_uuid",
+        "type": "uuid",
+        "nullable": true
+      }
+    ],
+    "foreign_keys": [
+      {
+        "column": "team_id",
+        "references_table": "team",
+        "references_column": "id"
+      },
+      {
+        "column": "opponent_team_id",
+        "references_table": "team",
+        "references_column": "id"
+      },
+      {
+        "column": "match_uuid",
+        "references_table": "match_registry",
+        "references_column": "id"
+      }
+    ],
+    "sample_data": [
+      {
+        "id": "7e759f23-ad0c-4c64-969d-2c1d7efa2994",
+        "match_id": "78069ae6",
+        "team_id": "8700f229-bf59-4d69-ac47-cca9a5cf0944",
+        "season_id": "2022",
+        "match_date": "2022-03-18",
+        "is_home": "True",
+        "opponent_team_id": "a97697e7-a2c0-42b4-a504-81977459f02c",
+        "venue_id": "49fab18f-9457-495f-9ecc-08a76637dd5f",
+        "goals_for": "1",
+        "goals_against": "1",
+        "outcome": "Draw",
+        "points": "1",
+        "total_passes_attempted": "448",
+        "total_passes_completed": "328",
+        "pass_completion_pct": "73.21",
+        "total_assists": "1",
+        "total_key_passes": "17",
+        "progressive_passes": "50",
+        "total_touches": "577",
+        "total_carries": "286",
+        "progressive_carries": "31",
+        "total_take_ons_attempted": "25",
+        "total_take_ons_succeeded": "13",
+        "total_tackles": "21",
+        "total_tackles_won": "14",
+        "total_interceptions": "12",
+        "total_clearances": "22",
+        "total_blocks": "10",
+        "yellow_cards": "1",
+        "red_cards": "0",
+        "total_fouls_committed": "7",
+        "total_fouls_drawn": "11",
+        "total_shots": "24",
+        "shots_on_target": "8",
+        "total_xg": "2.400",
+        "players_used": "15",
+        "starters": "12",
+        "created_at": "2025-08-22 12:20:14.436782",
+        "updated_at": "2025-08-25 23:01:12.609310",
+        "match_uuid": "b420b665-a7b2-4d5b-bb7e-cbc0deed3148"
+      },
+      {
+        "id": "fb23ebed-f2f1-4d08-99de-524e4b0d4069",
+        "match_id": "17f37cd6",
+        "team_id": "1626f693-5827-42f9-8bb9-87a199c0cdc9",
+        "season_id": "2022",
+        "match_date": "2022-03-18",
+        "is_home": "True",
+        "opponent_team_id": "ef5dfc30-d153-4bc9-957d-92678b35785c",
+        "venue_id": "ebedeaf2-2e9f-4248-838f-6f292abba40d",
+        "goals_for": "1",
+        "goals_against": "1",
+        "outcome": "Draw",
+        "points": "1",
+        "total_passes_attempted": "460",
+        "total_passes_completed": "346",
+        "pass_completion_pct": "75.22",
+        "total_assists": "0",
+        "total_key_passes": "7",
+        "progressive_passes": "26",
+        "total_touches": "601",
+        "total_carries": "329",
+        "progressive_carries": "12",
+        "total_take_ons_attempted": "19",
+        "total_take_ons_succeeded": "9",
+        "total_tackles": "19",
+        "total_tackles_won": "11",
+        "total_interceptions": "12",
+        "total_clearances": "24",
+        "total_blocks": "12",
+        "yellow_cards": "2",
+        "red_cards": "0",
+        "total_fouls_committed": "9",
+        "total_fouls_drawn": "10",
+        "total_shots": "8",
+        "shots_on_target": "3",
+        "total_xg": "1.150",
+        "players_used": "14",
+        "starters": "11",
+        "created_at": "2025-08-22 12:20:14.436782",
+        "updated_at": "2025-08-25 23:01:13.097619",
+        "match_uuid": "37d3f132-c0ed-4418-ac0c-4f7967108172"
+      }
+    ]
+  },
+  "player": {
+    "row_count": 1186,
+    "columns": [
+      {
+        "name": "id",
+        "type": "character varying",
+        "nullable": false
+      },
+      {
+        "name": "player_name",
+        "type": "character varying",
+        "nullable": false
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "updated_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "birth_date",
+        "type": "date",
+        "nullable": true
+      },
+      {
+        "name": "nationality",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "position",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "height_cm",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "nwsl_id",
+        "type": "character varying",
+        "nullable": true
+      }
+    ],
+    "foreign_keys": [],
+    "sample_data": [
+      {
+        "id": "eeb2f6eb",
+        "player_name": "Mak Whitham",
+        "created_at": "2025-08-15 19:20:42.022934",
+        "updated_at": "2025-08-26 00:01:15.111469",
+        "birth_date": "None",
+        "nationality": "None",
+        "position": "None",
+        "height_cm": "None",
+        "nwsl_id": "a0b3cc966c05471caea2fced8abdb5cc"
+      },
+      {
+        "id": "eb036ce5",
+        "player_name": "Samantha Hiatt",
+        "created_at": "2025-08-15 19:21:21.279383",
+        "updated_at": "2025-08-26 00:01:19.456414",
+        "birth_date": "1998-01-06",
+        "nationality": "USA",
+        "position": "CB",
+        "height_cm": "178",
+        "nwsl_id": "aa256aeb38a8454589438798a521ae12"
+      }
+    ]
+  },
+  "team": {
+    "row_count": 17,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false
+      },
+      {
+        "name": "team_id",
+        "type": "character varying",
+        "nullable": false
+      },
+      {
+        "name": "nwsl_id",
+        "type": "uuid",
+        "nullable": true
+      },
+      {
+        "name": "asa_id",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "team_name",
+        "type": "character varying",
+        "nullable": false
+      },
+      {
+        "name": "team_name_long",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "active_2013",
+        "type": "boolean",
+        "nullable": true
+      },
+      {
+        "name": "active_2014",
+        "type": "boolean",
+        "nullable": true
+      },
+      {
+        "name": "active_2015",
+        "type": "boolean",
+        "nullable": true
+      },
+      {
+        "name": "active_2016",
+        "type": "boolean",
+        "nullable": true
+      },
+      {
+        "name": "active_2017",
+        "type": "boolean",
+        "nullable": true
+      },
+      {
+        "name": "active_2018",
+        "type": "boolean",
+        "nullable": true
+      },
+      {
+        "name": "active_2019",
+        "type": "boolean",
+        "nullable": true
+      },
+      {
+        "name": "active_2020",
+        "type": "boolean",
+        "nullable": true
+      },
+      {
+        "name": "active_2021",
+        "type": "boolean",
+        "nullable": true
+      },
+      {
+        "name": "active_2022",
+        "type": "boolean",
+        "nullable": true
+      },
+      {
+        "name": "active_2023",
+        "type": "boolean",
+        "nullable": true
+      },
+      {
+        "name": "active_2024",
+        "type": "boolean",
+        "nullable": true
+      },
+      {
+        "name": "active_2025",
+        "type": "boolean",
+        "nullable": true
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "updated_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      }
+    ],
+    "foreign_keys": [],
+    "sample_data": [
+      {
+        "id": "ff2fd15d-7a93-4bc7-b19d-e4404a59e430",
+        "team_id": "8e306dc6",
+        "nwsl_id": "c83f2ca0-5aa8-4c73-8b53-73f0d2a31b39",
+        "asa_id": "raMyrr25d2",
+        "team_name": "Gotham FC",
+        "team_name_long": "Gotham FC",
+        "active_2013": "True",
+        "active_2014": "True",
+        "active_2015": "True",
+        "active_2016": "True",
+        "active_2017": "True",
+        "active_2018": "True",
+        "active_2019": "True",
+        "active_2020": "True",
+        "active_2021": "True",
+        "active_2022": "True",
+        "active_2023": "True",
+        "active_2024": "True",
+        "active_2025": "True",
+        "created_at": "2025-08-21 13:11:06.837340",
+        "updated_at": "2025-08-21 13:11:06.837340"
+      },
+      {
+        "id": "7a4b3f8a-2727-4500-9efe-1a14e6ceed05",
+        "team_id": "d976a235",
+        "nwsl_id": "269e825b-853f-4b43-a9d3-8390aa92bf6e",
+        "asa_id": "KPqjw8PQ6v",
+        "team_name": "Chicago Stars",
+        "team_name_long": "Chicago Stars",
+        "active_2013": "True",
+        "active_2014": "True",
+        "active_2015": "True",
+        "active_2016": "True",
+        "active_2017": "True",
+        "active_2018": "True",
+        "active_2019": "True",
+        "active_2020": "True",
+        "active_2021": "True",
+        "active_2022": "True",
+        "active_2023": "True",
+        "active_2024": "True",
+        "active_2025": "True",
+        "created_at": "2025-08-21 13:11:06.837340",
+        "updated_at": "2025-08-21 13:11:06.837340"
+      }
+    ]
+  },
+  "team_season": {
+    "row_count": 128,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false
+      },
+      {
+        "name": "team_id",
+        "type": "uuid",
+        "nullable": false
+      },
+      {
+        "name": "season_id",
+        "type": "integer",
+        "nullable": false
+      },
+      {
+        "name": "matches_played",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "wins",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "draws",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "losses",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "points",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "goals_for",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "goals_against",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "goal_difference",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "made_playoffs",
+        "type": "boolean",
+        "nullable": true
+      },
+      {
+        "name": "nwsl_shield",
+        "type": "boolean",
+        "nullable": true
+      },
+      {
+        "name": "nwsl_championship",
+        "type": "boolean",
+        "nullable": true
+      },
+      {
+        "name": "playoff_round_reached",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "updated_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      }
+    ],
+    "foreign_keys": [
+      {
+        "column": "team_id",
+        "references_table": "team",
+        "references_column": "id"
+      }
+    ],
+    "sample_data": [
+      {
+        "id": "780e72b6-6e56-4a27-b356-16e748b48f30",
+        "team_id": "003e8a71-4cd1-47ce-b76c-aaf65dea230c",
+        "season_id": "2013",
+        "matches_played": "22",
+        "wins": "8",
+        "draws": "6",
+        "losses": "8",
+        "points": "30",
+        "goals_for": "35",
+        "goals_against": "34",
+        "goal_difference": "1",
+        "made_playoffs": "False",
+        "nwsl_shield": "False",
+        "nwsl_championship": "False",
+        "playoff_round_reached": "None",
+        "created_at": "2025-08-25 18:41:02.655800",
+        "updated_at": "2025-08-25 18:41:02.655800"
+      },
+      {
+        "id": "dbd0babd-3cd3-4831-9811-67380e84398e",
+        "team_id": "7a4b3f8a-2727-4500-9efe-1a14e6ceed05",
+        "season_id": "2013",
+        "matches_played": "22",
+        "wins": "8",
+        "draws": "6",
+        "losses": "8",
+        "points": "30",
+        "goals_for": "32",
+        "goals_against": "36",
+        "goal_difference": "-4",
+        "made_playoffs": "False",
+        "nwsl_shield": "False",
+        "nwsl_championship": "False",
+        "playoff_round_reached": "None",
+        "created_at": "2025-08-25 18:41:02.655800",
+        "updated_at": "2025-08-25 18:41:02.655800"
+      }
+    ]
+  },
+  "venue": {
+    "row_count": 47,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false
+      },
+      {
+        "name": "name",
+        "type": "character varying",
+        "nullable": false
+      },
+      {
+        "name": "city",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "state",
+        "type": "character varying",
+        "nullable": true
+      },
+      {
+        "name": "capacity",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      },
+      {
+        "name": "updated_at",
+        "type": "timestamp without time zone",
+        "nullable": true
+      }
+    ],
+    "foreign_keys": [],
+    "sample_data": [
+      {
+        "id": "2bd58bc3-7139-427a-a3c4-ecb60fe53a49",
+        "name": "Red Bull Arena",
+        "city": "Harrison",
+        "state": "NJ",
+        "capacity": "None",
+        "created_at": "2025-08-15 19:08:41.183111",
+        "updated_at": "2025-08-15 19:08:41.183111"
+      },
+      {
+        "id": "8edfdab3-250f-4196-8cf0-76bae76ca374",
+        "name": "Providence Park",
+        "city": "Portland",
+        "state": "OR",
+        "capacity": "None",
+        "created_at": "2025-08-15 19:08:41.183111",
+        "updated_at": "2025-08-15 19:08:41.183111"
+      }
+    ]
+  }
+}
