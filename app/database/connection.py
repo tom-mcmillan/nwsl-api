@@ -19,8 +19,8 @@ class DatabasePool:
                 user=settings.DB_USER,
                 password=settings.DB_PASSWORD,
                 database=settings.DB_NAME,
-                min_size=10,
-                max_size=20,
+                min_size=1,
+                max_size=5,
                 command_timeout=60
             )
         else:
@@ -31,8 +31,8 @@ class DatabasePool:
                 user=settings.DB_USER,
                 password=settings.DB_PASSWORD,
                 database=settings.DB_NAME,
-                min_size=10,
-                max_size=20,
+                min_size=1,
+                max_size=5,
                 command_timeout=60
             )
         print(f"Connected to NWSL database: {settings.DB_NAME}")

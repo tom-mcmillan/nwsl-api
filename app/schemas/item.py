@@ -40,5 +40,5 @@ class PaginatedItems(BaseModel):
     items: list[ItemResponse]
     total: int
     page: int
-    per_page: int
+    page_size: int
     total_pages: int

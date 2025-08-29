@@ -20,28 +20,49 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="NWSL API",
     description="""
-    ## National Women's Soccer League API
-    
-    Access comprehensive NWSL data including teams, players, matches, and detailed statistics.
-    
-    ### Authentication
-    All endpoints require an API key. For demo access, use:
-    - Header: `X-API-Key`
-    - Value: `nwsl-demo-key-2024`
-    
-    ### Available Data
-    - **Teams**: All NWSL teams with season data
-    - **Players**: Complete player roster with profiles
-    - **Matches**: Match registry with scores and details
-    - **Match Events**: Goals, cards, substitutions
-    - **Player Stats**: Detailed performance metrics
-    - **Venues**: Stadium information
-    
-    ### Features
-    - Pagination on all endpoints
-    - Filtering by season, team, player
-    - Search capabilities
-    - Comprehensive match statistics
+National Women's Soccer League API
+
+Access comprehensive NWSL data including teams, players, matches, and detailed statistics.
+
+**Authentication**  
+All endpoints require an API key. For demo access, use:
+- Header: `X-API-Key`
+- Value: `nwsl-demo-key-2024`
+
+**Get Your API Key**  
+Register at: https://api.nwsldata.com/register
+
+**Available Data**
+- **Teams**: 16 NWSL teams with complete profiles and statistics
+- **Players**: 500+ player profiles with positions, nationalities, and career stats  
+- **Matches**: 1,500+ matches with scores, lineups, and detailed events
+- **Match Events**: 9,000+ goals, cards, and substitutions
+- **Player Stats**: Career and season statistics, leaderboards
+- **Venues**: Stadium information with capacity and location details
+
+**Features**
+- ✅ RESTful API design with consistent patterns
+- ✅ Pagination on all list endpoints (page/page_size parameters)
+- ✅ Advanced filtering by season, team, player, date ranges
+- ✅ Full-text search capabilities on relevant endpoints
+- ✅ Comprehensive match and player statistics
+- ✅ Real-time data updates during the season
+
+**Rate Limits**
+- Demo Key: 100 requests/hour
+- Standard Key: 1,000 requests/hour  
+- Premium Key: 10,000 requests/hour
+
+**Response Formats**
+All responses are in JSON format with consistent structure:
+- Success responses include the requested data
+- Error responses include status code and detail message
+- List endpoints include pagination metadata
+
+**Example Request**
+```bash
+curl -H "X-API-Key: nwsl-demo-key-2024" https://api.nwsldata.com/api/v1/teams/
+```
     """,
     version=settings.VERSION,
     docs_url="/docs",

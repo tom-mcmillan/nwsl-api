@@ -34,14 +34,14 @@ async def create_item(item: ItemCreate):
 
 @router.get("/", response_model=PaginatedItems)
 async def get_items(
-    page: int = Query(1, ge=1),
-    per_page: int = Query(10, ge=1, le=100),
-    search: Optional[str] = None
+    page: int = Query(1, ge=1, description="Page number for pagination"),
+    page_size: int = Query(10, ge=1, le=100, description="Number of items per page"),
+    search: Optional[str] = Query(None, description="Search term for filtering items")
 ):
-    offset = (page - 1) * per_page
+    offset = (page - 1) * page_size
     
     where_clause = ""
-    params = [per_page, offset]
+    params = [page_size, offset]
     param_count = 2
     
     if search:
@@ -66,13 +66,13 @@ async def get_items(
         rows = await database_pool.fetch(items_query, *params)
         items = [ItemResponse(**dict(row)) for row in rows]
         
-        total_pages = (total + per_page - 1) // per_page
+        total_pages = (total + page_size - 1) // page_size
         
         return PaginatedItems(
             items=items,
             total=total,
             page=page,
-            per_page=per_page,
+            page_size=page_size,
             total_pages=total_pages
         )
     except Exception as e:

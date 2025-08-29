@@ -10,7 +10,7 @@ router = APIRouter()
 @router.get("/", dependencies=[Depends(verify_api_key)])
 async def get_teams(
     page: int = Query(1, ge=1, description="Page number"),
-    page_size: int = Query(settings.DEFAULT_PAGE_SIZE, ge=1, le=settings.MAX_PAGE_SIZE),
+    page_size: int = Query(settings.DEFAULT_PAGE_SIZE, ge=1, le=settings.MAX_PAGE_SIZE, description="Number of items per page"),
     search: Optional[str] = Query(None, description="Search teams by name or city")
 ):
     """
@@ -128,8 +128,8 @@ async def get_team_players(
 async def get_team_matches(
     team_id: str,
     season: Optional[int] = Query(None, description="Filter by season"),
-    page: int = Query(1, ge=1),
-    page_size: int = Query(settings.DEFAULT_PAGE_SIZE, ge=1, le=settings.MAX_PAGE_SIZE)
+    page: int = Query(1, ge=1, description="Page number for pagination"),
+    page_size: int = Query(settings.DEFAULT_PAGE_SIZE, ge=1, le=settings.MAX_PAGE_SIZE, description="Number of items per page")
 ):
     """Get all matches for a specific team."""
     offset = (page - 1) * page_size

@@ -74,8 +74,8 @@ async def get_venue(venue_id: str):
 async def get_venue_matches(
     venue_id: str,
     season: Optional[int] = Query(None, description="Filter by season"),
-    page: int = Query(1, ge=1),
-    page_size: int = Query(50, ge=1, le=200)
+    page: int = Query(1, ge=1, description="Page number for pagination"),
+    page_size: int = Query(50, ge=1, le=200, description="Number of items per page")
 ):
     """Get all matches played at a specific venue."""
     offset = (page - 1) * page_size

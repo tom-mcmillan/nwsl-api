@@ -13,8 +13,8 @@ async def get_events(
     season: Optional[int] = Query(None, description="Filter by season"),
     team_id: Optional[str] = Query(None, description="Filter by team"),
     player_id: Optional[str] = Query(None, description="Filter by player"),
-    page: int = Query(1, ge=1),
-    page_size: int = Query(settings.DEFAULT_PAGE_SIZE, ge=1, le=settings.MAX_PAGE_SIZE)
+    page: int = Query(1, ge=1, description="Page number for pagination"),
+    page_size: int = Query(settings.DEFAULT_PAGE_SIZE, ge=1, le=settings.MAX_PAGE_SIZE, description="Number of items per page")
 ):
     """Get match events with filters."""
     offset = (page - 1) * page_size

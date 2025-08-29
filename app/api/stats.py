@@ -54,7 +54,7 @@ async def get_goal_leaders(
 @router.get("/leaderboard/assists", dependencies=[Depends(verify_api_key)])
 async def get_assist_leaders(
     season: Optional[int] = Query(None, description="Filter by season"),
-    limit: int = Query(10, ge=1, le=100)
+    limit: int = Query(10, ge=1, le=100, description="Maximum number of results to return")
 ):
     """Get top assist providers."""
     params = []
@@ -93,7 +93,7 @@ async def get_assist_leaders(
 @router.get("/leaderboard/clean-sheets", dependencies=[Depends(verify_api_key)])
 async def get_clean_sheet_leaders(
     season: Optional[int] = Query(None, description="Filter by season"),
-    limit: int = Query(10, ge=1, le=100)
+    limit: int = Query(10, ge=1, le=100, description="Maximum number of results to return")
 ):
     """Get goalkeepers with most clean sheets."""
     params = []

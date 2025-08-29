@@ -14,8 +14,8 @@ async def get_matches(
     team_id: Optional[str] = Query(None, description="Filter by team"),
     start_date: Optional[date] = Query(None, description="Filter matches after this date"),
     end_date: Optional[date] = Query(None, description="Filter matches before this date"),
-    page: int = Query(1, ge=1),
-    page_size: int = Query(settings.DEFAULT_PAGE_SIZE, ge=1, le=settings.MAX_PAGE_SIZE)
+    page: int = Query(1, ge=1, description="Page number for pagination"),
+    page_size: int = Query(settings.DEFAULT_PAGE_SIZE, ge=1, le=settings.MAX_PAGE_SIZE, description="Number of items per page")
 ):
     """Get all matches with filters and pagination."""
     offset = (page - 1) * page_size
