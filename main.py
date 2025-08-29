@@ -66,17 +66,54 @@ Or use the demo key for testing:
 ### Step 2: Make Your First Request
 Try it right here in the docs! Click any endpoint below, then click "Try it out".
 
-Example with curl:
+**Quick Start Examples:**
+
+<details>
+<summary><b>cURL</b></summary>
+
 ```bash
 curl -H "X-API-Key: nwsl-demo-key-2024" \\
      https://api.nwsldata.com/api/v1/teams/
 ```
+</details>
+
+<details>
+<summary><b>Python</b></summary>
+
+```python
+import requests
+
+headers = {"X-API-Key": "nwsl-demo-key-2024"}
+response = requests.get("https://api.nwsldata.com/api/v1/teams/", headers=headers)
+teams = response.json()
+print(f"Found {teams['total']} teams")
+```
+</details>
+
+<details>
+<summary><b>JavaScript</b></summary>
+
+```javascript
+const headers = {"X-API-Key": "nwsl-demo-key-2024"};
+fetch("https://api.nwsldata.com/api/v1/teams/", {headers})
+  .then(res => res.json())
+  .then(data => console.log(`Found ${data.total} teams`));
+```
+</details>
 
 ### Step 3: Explore the Data
 Click on any section below to see available endpoints. Each endpoint has:
 - **Try it out** button for testing
 - **Schema** tab showing response structure  
 - **Example** responses
+
+## 💡 Common Use Cases
+
+- **Fantasy Sports App**: Track player performance, injuries, and form
+- **Match Tracker**: Real-time scores, lineups, and match events
+- **Stats Dashboard**: Team and player analytics with historical data
+- **News Integration**: Enrich articles with live stats and records
+- **Betting Analysis**: Historical performance and head-to-head records
 
 ## 📊 Available Data
 - **Teams**: 16 NWSL teams with complete profiles and statistics
@@ -86,7 +123,7 @@ Click on any section below to see available endpoints. Each endpoint has:
 - **Player Stats**: Career and season statistics, leaderboards
 - **Venues**: Stadium information with capacity and location details
 
-**Features**
+## ⚡ Features
 - ✅ RESTful API design with consistent patterns
 - ✅ Pagination on all list endpoints (page/page_size parameters)
 - ✅ Advanced filtering by season, team, player, date ranges
@@ -99,16 +136,33 @@ Click on any section below to see available endpoints. Each endpoint has:
 - Standard Key: 1,000 requests/hour  
 - Premium Key: 10,000 requests/hour
 
-**Response Formats**
-All responses are in JSON format with consistent structure:
-- Success responses include the requested data
-- Error responses include status code and detail message
-- List endpoints include pagination metadata
+## 📋 Response Formats
 
-**Example Request**
-```bash
-curl -H "X-API-Key: nwsl-demo-key-2024" https://api.nwsldata.com/api/v1/teams/
+**Success Response:**
+```json
+{
+  "data": [...],
+  "total": 100,
+  "page": 1,
+  "page_size": 20
+}
 ```
+
+**Error Response:**
+```json
+{
+  "detail": "Error message",
+  "status_code": 400
+}
+```
+
+**Common Status Codes:**
+- `200` - Success
+- `400` - Bad Request (invalid parameters)
+- `401` - Unauthorized (invalid API key)
+- `404` - Not Found (resource doesn't exist)
+- `429` - Too Many Requests (rate limit exceeded)
+- `500` - Internal Server Error
     """,
     version=settings.VERSION,
     docs_url="/docs",
